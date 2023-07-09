@@ -6,5 +6,8 @@
   "repository": "https://github.com/osawa-koki/learning-google-spread-sheet.gas.git",
   "author": "osawa-koki <github@osawa.dev>",
   "license": "Apache-2.0",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.64"
+  }
 }
