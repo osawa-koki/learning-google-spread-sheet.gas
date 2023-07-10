@@ -32,4 +32,16 @@ function changeWidthHeight (): void {
   sheet.setRowHeight(1, 25)
 }
 
-export { hello, inspect, changeWidthHeight }
+function changeBackgroundColor (): void {
+  const file = DriveApp.getFileById(SPREADSHEET_FILE_ID)
+  const sheet = SpreadsheetApp.open(file)
+    .getSheetByName(SPREADSHEET_SHEET_NAME)
+  if (sheet == null) {
+    console.error('Sheet1 not found.')
+    return
+  }
+  const range = sheet.getRange('A1')
+  range.setBackground('#FF0000')
+}
+
+export { hello, inspect, changeWidthHeight, changeBackgroundColor }
