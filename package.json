@@ -9,6 +9,7 @@
   "scripts": {
     "lint:check": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
+    "test": "echo \"Error: no test specified.\" && exit 0",
     "save:gas": "clasp push",
     "open:gas": "clasp open",
     "save:var": "ts-node ./save/index.ts"
