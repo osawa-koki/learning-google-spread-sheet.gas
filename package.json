@@ -11,22 +11,15 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified.\" && exit 0",
     "save:gas": "clasp push",
-    "open:gas": "clasp open",
-    "save:var": "ts-node ./save/index.ts"
-  },
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "ts-node": "^10.9.1"
+    "open:gas": "clasp open"
   },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.64",
-    "@types/node": "^20.4.1",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^36.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "typescript": "*"
+    "eslint-plugin-promise": "^6.0.0"
   }
 }
