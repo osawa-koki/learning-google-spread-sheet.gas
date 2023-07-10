@@ -20,4 +20,16 @@ function inspect (): void {
   console.log('SPREADSHEET_SHEET_NAME:', SPREADSHEET_SHEET_NAME)
 }
 
-export { hello, inspect }
+function changeWidthHeight (): void {
+  const file = DriveApp.getFileById(SPREADSHEET_FILE_ID)
+  const sheet = SpreadsheetApp.open(file)
+    .getSheetByName(SPREADSHEET_SHEET_NAME)
+  if (sheet == null) {
+    console.error('Sheet1 not found.')
+    return
+  }
+  sheet.setColumnWidth(1, 25)
+  sheet.setRowHeight(1, 25)
+}
+
+export { hello, inspect, changeWidthHeight }
