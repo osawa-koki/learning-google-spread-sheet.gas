@@ -2,6 +2,8 @@
 
 😖😖😖 GASでGoogleスプレッドシートを操作してみる！  
 
+![成果物](./docs/img/fruit.gif)  
+
 ## 準備方法
 
 ### 1. Google Apps Script APIの有効化
