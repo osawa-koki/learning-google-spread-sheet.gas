@@ -25,10 +25,33 @@ yarn global add clasp
 clasp login
 ```
 
-### 3. プロジェクトの作成
+### 4. プロジェクトの作成
 
- Node.jsプロジェクトを初期化します。  
+Node.jsプロジェクトを初期化します。  
+また、GASの型定義ファイルをインストールします。  
 
 ```shell
 yarn init
+yarn add -D @types/google-apps-script
+```
+
+### 5. Claspプロジェクトの作成
+
+以下のコマンドでClaspプロジェクトを作成します。  
+
+```shell
+clasp create
+```
+
+### 6. その他イロイロのコマンド
+
+```shell
+# ローカルのファイルをGASにアップロード
+clasp push
+
+# GASのファイルをローカルにダウンロード
+clasp pull
+
+# GASのファイルを開く
+clasp open
 ```
