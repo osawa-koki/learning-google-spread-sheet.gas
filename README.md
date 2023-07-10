@@ -64,3 +64,5 @@ clasp open
 ![プロパティサービスへのデータの登録](./docs/images/property-service.gif)  
 
 登録するデータは`.env.example`に記載しています。  
+
+[公式ドキュメント](https://developers.google.com/apps-script/guides/properties?hl=ja)  
