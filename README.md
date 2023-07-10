@@ -66,3 +66,10 @@ clasp open
 登録するデータは`.env.example`に記載しています。  
 
 [公式ドキュメント](https://developers.google.com/apps-script/guides/properties?hl=ja)  
+
+## デプロイ
+
+`cat ~/.clasprc.json`でGASの認証情報を取得します。  
+これをGitHubのシークレットに`CLASP_RC_JSON`として登録します。  
+
+`main`ブランチにpushすると、GitHub Actionsでデプロイされます。  
