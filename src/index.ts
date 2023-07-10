@@ -41,7 +41,7 @@ function changeBackgroundColor (): void {
     return
   }
   const range = sheet.getRange('A1')
-  range.setBackground('#FFFFFF')
+  range.setBackground('#FF0000')
 }
 
 export { hello, inspect, changeWidthHeight, changeBackgroundColor }
