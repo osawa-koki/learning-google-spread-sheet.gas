@@ -1,0 +1,13 @@
+{
+  "name": "learning-google-spread-sheet.gas",
+  "version": "1.0.0",
+  "description": "😖😖😖 GASでGoogleスプレッドシートを操作してみる！",
+  "main": "index.js",
+  "repository": "https://github.com/osawa-koki/learning-google-spread-sheet.gas.git",
+  "author": "osawa-koki <github@osawa.dev>",
+  "license": "Apache-2.0",
+  "private": false,
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.64"
+  }
+}
