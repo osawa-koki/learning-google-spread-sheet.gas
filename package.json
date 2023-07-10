@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.64",
+    "@types/node": "^20.4.1",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^36.0.0",
