@@ -1,16 +1,8 @@
-import dotenv from 'dotenv'
 
-dotenv.config()
+const scriptProperties = PropertiesService.getScriptProperties()
+const SPREADSHEET_FILE_ID = scriptProperties.getProperty('SPREADSHEET_FILE_ID')
+const SPREADSHEET_SHEET_NAME = scriptProperties.getProperty('SPREADSHEET_SHEET_NAME')
 
-const {
-  SPREADSHEET_FILE_ID,
-  SPREADSHEET_SHEET_NAME
-}: {
-  SPREADSHEET_FILE_ID: string
-  SPREADSHEET_SHEET_NAME: string
-} = process.env
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function hello (): void {
   const file = DriveApp.getFileById(SPREADSHEET_FILE_ID)
   const sheet = SpreadsheetApp.open(file)
@@ -22,3 +14,10 @@ function hello (): void {
   const range = sheet.getRange('A1')
   range.setValue('Hello World!')
 }
+
+function inspect (): void {
+  console.log('SPREADSHEET_FILE_ID:', SPREADSHEET_FILE_ID)
+  console.log('SPREADSHEET_SHEET_NAME:', SPREADSHEET_SHEET_NAME)
+}
+
+export { hello, inspect }
